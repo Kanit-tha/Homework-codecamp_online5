@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW 1</title>
+    <style>
+        table,
+        td,
+        th {
+            border: 1px solid black;
+        }
+
+        td,
+        th {
+            padding: 15px;
+        }
+    </style>
+    <link rel="stylesheet" href="##" type="text/css">
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>CSS syntax</th>
+                <th>CSS writing</th>
+                <th>Selector</th>
+                <th>Combinator</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <ul>
+                        <li>Selector</li>
+                        <li>Declaration</li>
+                        <ul>
+                            <li>property</li>
+                            <li>value</li>
+                        </ul>
+                    </ul>
+                </td>
+                <td>มี 3 แบบ
+                    <ul>
+                        <li>Inline css</li>
+                        <li>Internal css</li>
+                        <li>External css</li>
+                    </ul>
+                </td>
+                <td>มี 6 แบบ
+                    <ul>
+                        <li>ID</li>
+                        <li>Class</li>
+                        <li>Pseudo element</li>
+                        <li>Pseudo class</li>
+                        <li>Combinator</li>
+                        <li>Attribute Selector</li>
+                    </ul>
+                </td>
+                <td>มี 4 แบบ
+                    <ul>
+                        <li>ช่องว่าง</li>
+                        <li>เครื่องหมาย ></li>
+                        <li>เครื่องหมาย +</li>
+                        <li>เครื่องหมาย ~ (Grave Accent)</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <hr>
+    <h1>For example css syntax</h1>
+    <p><b>css syntax</b> <br>
+        <pre>
+           Selector {Declaration}
+           Selector {property:value;}
+
+         <h3 style="color: red;">example</h3>  
+
+        <b>table,td,th </b> {
+            <i>border:1px solid black;</i>
+        }
+        <b>td,th</b> {
+            <i>padding: 15px;</i>
+        }
+
+        <b>Selector:table,td,th
+        หรือคือ &lt;table&gt;
+              &lt;td&gt; 
+              &lt;th&gt; </b>
+
+       
+        <i>Declaration:ส่วนที่อยู่ใน {}
+            Property:border และ padding
+            value:1px, solid, black และ 15px </i>
+       </pre>
+    </p>
+    <hr>
+    <h1>For example css writing</h1>
+    <p> Inline
+        <pre>
+            &lt;h3 style="color: red;"&gt;example&lt;/h3&gt;
+        </pre>
+    </p>
+    <p> Internal
+        <pre>
+            &lt;style&gt;
+                table,td,th {
+                    border:1px solid black;
+                }
+                td,th{
+                    padding: 15px;
+                }
+            &lt;/style&gt;
+        </pre>
+    </p>
+    <p> External
+        <pre>
+            &lt;link rel="stylesheet" href="ตำแหน่งไฟล์ CSS" type="text/css"&gt;
+        
+            ในไฟล์css
+
+            table,td,th {
+                border:1px solid black;
+            }
+            td,th{
+                padding: 15px;
+            }
+        </pre>
+    </p>
+    <hr>
+
+    <h1 id="nameId" class="nameClass">Selector example case</h1>
+    <style>
+        #nameId {
+            background-color: rosybrown;
+        }
+
+        .nameClass {
+            border: 1px solid black;
+        }
+
+        h1::first-letter {
+            color: red;
+        }
+
+        h1:hover {
+            color: blueviolet;
+        }
+
+        input[type] {
+            background-color: blueviolet;
+        }
+
+        ol li {
+            color: red;
+        }
+    </style>
+    <p>
+        <pre>
+
+        &lt;h1 id="nameId" class="nameClass"&gt;Selector example case&lt;/h1&gt;
+        <h3>ID : </h3>
+
+        #nameId {
+            background-color: rosybrown;
+        }
+
+        <h3>Class :</h3>
+
+        .nameClass {
+            border:1px solid black;
+        }
+
+        <hr>
+
+        <h3>Pseudo element :</h3>
+
+        h1 <b>:: first-letter</b> {
+            color:red;
+        }
+
+        <hr>
+
+        <h3>Pseudo class:</h3>
+        h1 <b>: hover</b> {
+            color: blueviolet;
+        }
+
+        <hr>
+
+
+        <h3>Attribute Selector:</h3>
+
+        <input type="button" value="button">
+        &lt;input type="button" value="button"&gt;
+
+        input<b>[type]</b> {
+            background-color: blueviolet;
+        }
+
+    </pre>
+
+    </p>
+    <hr>
+    <h1>Combinator example case</h1>
+    <p>
+        ให้ li ภายใต้ tag ol ทั้งหมดเป็นสีแดง
+        <ol>
+            <li>ol 1</li>
+            <li>ol 2<ul>
+                    <li>ul 2.1</li>
+                    <li>ul 2.2</li>
+                    <li>ul 2.3</li>
+                </ul>
+            </li>
+            <li>ol 3</li>
+            <li>ol 4</li>
+        </ol>
+        <ul>
+            <li>ul 1</li>
+            <li>ul 2 <ol>
+                    <li>ol 2.1</li>
+                    <li>ol 2.2</li>
+                    <li>ol 2.3</li>
+                </ol>
+            </li>
+            <li>ul 3</li>
+        </ul>
+
+        <pre>
+
+          <h3>Combinator:</h3>  
+        <b>ol li</b> {
+            color: red;
+        }
+
+    </pre>
+    </p>
+    <hr>
+
+
+</body>
+
+</html>
