@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW Responsive</title>
+    <style>
+        .imgHead {
+            width: 90%;
+            margin: 3%;
+
+        }
+
+        .container {
+            display: grid;
+            grid-gap: 30px;
+            margin: 3%;
+        }
+
+        .container>div {
+            background-color: pink;
+            border: palevioletred 1px solid;
+
+        }
+
+        footer {
+            min-width: 300px;
+            height: 50vh;
+            margin: auto;
+            background-color: black;
+            color:white;
+
+        }
+
+        @media only screen and (max-width:560px) {
+            .container {
+                grid-template-columns: auto;
+            }
+
+            .container > div {
+                min-width: 300px;
+                height: 50vh;
+            }
+        }
+
+        @media only screen and (min-width: 561px) and (max-width:1200px) {
+            .container {
+                grid-template-columns: auto auto;
+            }
+
+
+            .container > div {
+                min-width: 270px;
+                height: 50vh;
+            }
+        }
+
+        @media only screen and (min-width: 1201px) {
+            .container {
+                grid-template-columns: auto auto auto;
+            }
+
+            .container > div {
+                min-width: 300px;
+                height: 50vh;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img class="imgHead" src="/day3-4/img/gaz-m20-pobeda-4862728_1920.png" alt="car"><br>
+        ภาพโดย <a
+            href="https://pixabay.com/th/users/Emslichter-1377910/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4862728">Emslichter</a>
+        จาก <a
+            href="https://pixabay.com/th/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=4862728">Pixabay</a>
+    </header>
+    <div class="container">
+        <div>item 1
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Voluptas, explicabo magnam veritatis repudiandae
+                  at doloremque soluta ut. Mollitia similique, quaerat 
+                  sequi odit, earum et delectus ad, explicabo ratione 
+                  tenetur incidunt!</p>
+        </div>
+        <div>item 2
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Voluptas, explicabo magnam veritatis repudiandae
+                  at doloremque soluta ut. Mollitia similique, quaerat 
+                  sequi odit, earum et delectus ad, explicabo ratione 
+                  tenetur incidunt!</p>
+        </div>
+        <div>item 3
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Voluptas, explicabo magnam veritatis repudiandae
+                  at doloremque soluta ut. Mollitia similique, quaerat 
+                  sequi odit, earum et delectus ad, explicabo ratione 
+                  tenetur incidunt!</p>
+        </div>
+        <div>item 4
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Voluptas, explicabo magnam veritatis repudiandae
+                  at doloremque soluta ut. Mollitia similique, quaerat 
+                  sequi odit, earum et delectus ad, explicabo ratione 
+                  tenetur incidunt!</p>
+        </div>
+        <div>item 5
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Voluptas, explicabo magnam veritatis repudiandae
+                  at doloremque soluta ut. Mollitia similique, quaerat 
+                  sequi odit, earum et delectus ad, explicabo ratione 
+                  tenetur incidunt!</p>
+        </div>
+        <div>item 6
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing
+                 elit. Voluptas, explicabo magnam veritatis repudiandae
+                  at doloremque soluta ut. Mollitia similique, quaerat 
+                  sequi odit, earum et delectus ad, explicabo ratione 
+                  tenetur incidunt!</p>
+        </div>
+    </div>
+    <footer>
+        <h1>Title</h1>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime est soluta quis aliquid ipsa natus nesciunt
+        impedit saepe, assumenda qui id doloremque esse magni quia ab explicabo eius facere pariatur.
+    </footer>
+</body>
+
+</html>
