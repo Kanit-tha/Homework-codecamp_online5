@@ -83,11 +83,43 @@
 <table>
     <caption> Position & Z-index</caption>
     <thead>
-
+        <tr>
+            <th>Position</th>
+            <th>Z-index</th>
+        </tr>
 
     </thead>
     <tbody>
+        <tr>
+            <td>
+                <ul>คือ การกำหนดตำแหน่งที่จะแสดงผล <br>
+                    เช่น
+                    <li>static: ค่าพื้นฐาน เลื่อนตามหน้าเว็บปกติ </li>
+                    <li>fixed: กำหนดยึดอยู่กับที่ ไม่เลื่อนตามหน้าเว็บ</li>
+                    <li>relative: เลื่อนออกจากตำแหน่งเดิมตามที่กำหนดค่า</li>
+                    <li>alsolute: เลื่อนออกจากมุมบนซ้ายของหน้าจอ ตามกำหนดต่า</li>
+                    <li>sticky: รวม relative และ fixed ไว้ด้วยกัน โดยการกำหนด <br>
+                    ให้ relativeก่อน แล้วเพิ่มเติมว่าให้ไป fixed ที่top bottom </li>
 
+                </ul>
+            </td>
+            <td>
+                <ul>คือ การกำหนดลำดับความลึก อยู่หน้าอยู่หลัง สิ่งใดทับอยุ่บนสิ่งใด <br>
+                    ใช้งานโดย
+                    <li>ค่าพื้นฐาน ทุกชิ้นจะเท่ากับ z-index 0 </li>
+                    <li>ค่ามากกว่าจะอยู่หน้า เช่น z-index 1 อยู่หน้า 0 </li>
+                    <li>ค่าที่น้อยกว่าจะอยู่หลัง เช่น z-index -1 อยู่หลัง 1 และ 0</li>
+                </ul>
+                วิธีใช้
+                <pre>
+                    &lt;style&gt;
+                        selector {
+                            z-index: 1;
+                        }
+                    &lt;/style&gt;
+                </pre>
+            </td>
+        </tr>
     </tbody>
 </table>
 
