@@ -1,29 +1,479 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HW web nike</title>
     <style>
+        .topMenu {
+            background-color: white;
+            border: gray 0.1px solid;
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            z-index: 1;
 
+        }
+
+        .fistMenu {
+            background-color: white;
+            border: gray 0.1px solid;
+            padding: 0px 20px;
+        }
+
+        .headMenu {
+            background-color: white;
+            border: gray 0.1px solid;
+            padding: 15px 30px 15px 0px;
+        }
+
+        .rightMenu {
+            display: inline;
+            float: right
+        }
+
+        .listMenu {
+            position: relative;
+            display: inline-block;
+        }
+
+        .contentListMenu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .listMenu:hover .contentListMenu {
+            display: block;
+        }
+
+        .Menu {
+            display: inline;
+
+
+        }
+
+        #search {
+            display: inline-block;
+            float: right;
+        }
+
+        .tapMenu {
+            position: relative;
+            display: inline-block;
+        }
+
+        .contentMenu {
+            display: none;
+            position: absolute;
+            background-color: white;
+            min-width: 160px;
+            padding: 20px;
+            z-index: 1;
+        }
+
+        .tapMenu:hover .contentMenu {
+            display: block;
+        }
+
+        .vdoContent {
+            width: 90%;
+            height: 600px;
+            background-color: gray;
+
+        }
+
+        .textContent {
+            bottom: 200px;
+            left: 30px;
+            position: relative;
+        }
+
+
+        .newItem {
+            display: grid;
+            grid-template-columns: auto auto;
+
+
+        }
+
+        .newItem>div {
+            width: 40vw;
+            height: 100vh;
+            background-color: grey;
+        }
+
+        .itemContent {
+            bottom: 50px;
+            position: relative;
+        }
+
+        .topItem {
+            width: 90%;
+            height: 600px;
+            background-color: gray;
+        }
+
+
+        .topItemContent {
+            bottom: 200px;
+            left: 30px;
+            position: relative;
+        }
+
+        .allItem {
+            display: grid;
+            grid-template-columns: auto auto auto;
+
+
+        }
+
+        .allItem>div {
+            width: 30vw;
+            height: 100vh;
+            background-color: grey;
+        }
+
+        .nike80Item {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+
+        }
+
+        .nike80Item>div {
+            width: 30vw;
+            height: 100vh;
+            background-color: grey;
+        }
+
+        .footList {
+            display: grid;
+            width: 90vw;
+            height: 50vh;
+            grid-template-columns: auto auto auto auto;
+            justify-content: space-evenly;
+        }
+        .footList > span {
+            display: inline-block;
+            padding: 30px;
+        }
+
+        footer {
+            width: 100vw;
+            height: 50vh;
+            background-color: black;
+            color: white;
+        }
     </style>
 </head>
+
 <body>
-    <div></div>
-    <div></div>
-    <div>
+    <div class="topMenu">
+        <div class="fistMenu">
+            <a href="#">nike</a>
+            <a href="#"><img src="#" alt="icon"></a>
+            <div class="rightMenu">
+                <a href="#">เข้าร่วม/ล็อกอินเข้าสู่โปรไฟล์สมาชิก Nike</a>
+                <div class="listMenu">
+                    <a href="#">ความช่วยเหลือ</a>
+                    <div class="contentListMenu">
+                        <a href="#">สถานะคำสั่งซื้อ</a> <br>
+                        <a href="#">การจัดส่งสินค้า</a> <br>
+                        <a href="#">การคืนสินค้า</a> <br>
+                        <a href="#">ติดต่อเรา</a> <br>
+                        <a href="#">นโยบายความเป็นส่วนตัว</a> <br>
+                        <a href="#">เงื่อนไขการขาย</a> <br>
+                        <a href="#">ข้อกำหนดการใช้งาน</a> <br>
+                        <a href="#">ดูทั้งหมด</a>
+                    </div>
+                </div>
+                <a href="#"><img src="#" alt="icon cart"></a>
+                <a href="#"><img src="#" alt="icon thai"></a>
+            </div>
+        </div>
+        <div class="headMenu">
+            <a href="#"><img src="#" alt="nike logo"></a>
+            <div class="Menu">
+                <div class="tapMenu">
+                    <a href="#">บุรุษ</a>
+                    <div class="contentMenu">
+                        <a href="#">ผลิตภัณฑ์ออกไหม่</a> <br>
+                        <a href="#">รองเท้า</a> <br>
+                        <a href="#">เสื้อผ้า</a> <br>
+                        <a href="#">ซื้อตามประเภทกีฬา</a> <br>
+                        <a href="#">ซื้อตามแบรน์</a> <br>
+                        <a href="#">ไอคอน</a> <br>
+                    </div>
+                </div>
+                <div class="tapMenu">
+                    <a href="#">สตรี</a>
+                    <div class="contentMenu">
+                        <a href="#">ผลิตภัณฑ์ออกไหม่</a> <br>
+                        <a href="#">รองเท้า</a> <br>
+                        <a href="#">เสื้อผ้า</a> <br>
+                        <a href="#">ซื้อตามประเภทกีฬา</a> <br>
+                        <a href="#">ซื้อตามแบรน์</a> <br>
+                        <a href="#">ไอคอน</a> <br>
+                    </div>
+                </div>
+                <div class="tapMenu">
+                    <a href="#">เด็ก</a>
+                    <div class="contentMenu">
+                        <a href="#">ผลิตภัณฑ์ออกไหม่</a> <br>
+                        <a href="#">รองเท้า</a> <br>
+                        <a href="#">เสื้อผ้า</a> <br>
+                        <a href="#">ซื้อตามประเภทกีฬา</a> <br>
+                        <a href="#">ซื้อตามแบรน์</a> <br>
+                        <a href="#">ไอคอน</a> <br>
+                    </div>
+                </div>
+                <div class="tapMenu">
+                    <a href="#">ออกแบบด้วยตัวเอง</a>
+                    <div class="contentMenu">
+                        <a href="#">ผลิตภัณฑ์ออกไหม่</a> <br>
+                        <a href="#">รองเท้า</a> <br>
+                        <a href="#">เสื้อผ้า</a> <br>
+                        <a href="#">ซื้อตามประเภทกีฬา</a> <br>
+                        <a href="#">ซื้อตามแบรน์</a> <br>
+                        <a href="#">ไอคอน</a> <br>
+                    </div>
+                </div>
+
+                <div class="tapMenu">
+                    <a href="#">คอลเลกชัน</a>
+                    <div class="contentMenu">
+                        <a href="#">ไลฟ์สไตล์</a> <br>
+                        <a href="#">วิ่ง</a> <br>
+                        <a href="#">นักกีฬา</a> <br>
+
+                    </div>
+                </div>
+            </div>
+            <a href="#">ปฏิทินเปิดตัว</a>
+            <form action="#" id="search">
+                <input type="search" value="ค้นหา">
+
+            </form>
+
+
+
+
+        </div>
+    </div>
+
+    <div class="free30">
         <p>
             ส่งคืนฟรีภายใน 30 วัน <br>
-            สมาชิกรับสิทธิ์ส่งคืนฟรีภายใน 30 วัน 
+            สมาชิกรับสิทธิ์ส่งคืนฟรีภายใน 30 วัน
             <a href="#">เข้าร่วมเลย</a>
         </p>
     </div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
+    <div class="vdoHead">
+        <div class="vdoContent">
+            <img src="#" alt="vdo">
+        </div>
+        <div class="textContent">
+            Lorem ipsum dolor sit amet, <br>
+            <h1>consectetur adipisicing elit.</h1>
+            <button> Facilis</button>
+        </div>
+    </div>
+    <h1>สินค้ามาใหม่</h1>
+    <div class="newItem">
+        <div>
+            <div class="Item">
+                <img width="500px" height="500px" src="#" alt="item1">
+
+                <div class="itemContent">
+                    Lorem ipsum dolor sit amet, <br>
+                    <h1>consectetur adipisicing elit.</h1>
+                    <button> Facilis</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Item">
+                <img width="500px" height="500px" src="#" alt="item2">
+
+                <div class="itemContent">
+                    Lorem ipsum dolor sit amet, <br>
+                    <h1>consectetur adipisicing elit.</h1>
+                    <button> Facilis</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h1>สินค้าเด่น</h1>
+    <div>
+        <div class="topItem">
+            <img width="90%" height="600px" src="#" alt="topItem">
+
+            <div class="topItemContent">
+                Lorem ipsum dolor sit amet, <br>
+                <h1>consectetur adipisicing elit.</h1>
+                <button> Facilis</button>
+            </div>
+        </div>
+
+    </div>
+    <h1>กลิ่นอายยุค 80 จาก Nike SB</h1>
+    <div class="nike80Item">
+        <div>
+            <div class="Item">
+                <img width="500px" height="500px" src="#" alt="item1">
+
+                <div class="itemContent">
+                    Lorem ipsum dolor sit amet, <br>
+                    <h1>consectetur adipisicing elit.</h1>
+                    <button> Facilis</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Item">
+                <img width="500px" height="500px" src="#" alt="item2">
+
+                <div class="itemContent">
+                    Lorem ipsum dolor sit amet, <br>
+                    <h1>consectetur adipisicing elit.</h1>
+                    <button> Facilis</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Item">
+                <img width="500px" height="500px" src="#" alt="item1">
+
+                <div class="itemContent">
+                    Lorem ipsum dolor sit amet, <br>
+                    <h1>consectetur adipisicing elit.</h1>
+                    <button> Facilis</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Item">
+                <img width="500px" height="500px" src="#" alt="item1">
+
+                <div class="itemContent">
+                    Lorem ipsum dolor sit amet, <br>
+                    <h1>consectetur adipisicing elit.</h1>
+                    <button> Facilis</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Item">
+                <img width="500px" height="500px" src="#" alt="item2">
+
+                <div class="itemContent">
+                    Lorem ipsum dolor sit amet, <br>
+                    <h1>consectetur adipisicing elit.</h1>
+                    <button> Facilis</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Item">
+                <img width="500px" height="500px" src="#" alt="item1">
+
+                <div class="itemContent">
+                    Lorem ipsum dolor sit amet, <br>
+                    <h1>consectetur adipisicing elit.</h1>
+                    <button> Facilis</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <h1>อีกมากมายจาก Nike</h1>
+    <div class="allItem">
+        <div>
+            <div class="Item">
+                <img width="500px" height="500px" src="#" alt="item1">
+
+                <div class="itemContent">
+                    Lorem ipsum dolor sit amet, <br>
+                    <h1>consectetur adipisicing elit.</h1>
+                    <button> Facilis</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Item">
+                <img width="500px" height="500px" src="#" alt="item2">
+
+                <div class="itemContent">
+                    Lorem ipsum dolor sit amet, <br>
+                    <h1>consectetur adipisicing elit.</h1>
+                    <button> Facilis</button>
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="Item">
+                <img width="500px" height="500px" src="#" alt="item1">
+
+                <div class="itemContent">
+                    Lorem ipsum dolor sit amet, <br>
+                    <h1>consectetur adipisicing elit.</h1>
+                    <button> Facilis</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="footList">
+            <span>1
+                <ul>
+                    <li>1.1</li>
+                    <li>1.2</li>
+                    <li>1.3</li>
+                    <li>1.4</li>
+                    <li>1.5</li>
+                </ul>
+            </span>
+            <span>2
+                <ul>
+                    <li>2.1</li>
+                    <li>2.2</li>
+                    <li>2.3</li>
+                    <li>2.4</li>
+                    <li>2.5</li>
+                </ul>
+            </span>
+            <span>3
+                <ul>
+                    <li>3.1</li>
+                    <li>3.2</li>
+                    <li>3.3</li>
+                    <li>3.4</li>
+                    <li>3.5</li>
+                </ul>
+            </span>
+            <span>4
+                <ul>
+                    <li>4.1</li>
+                    <li>4.2</li>
+                    <li>4.3</li>
+                    <li>4.4</li>
+                    <li>4.5</li>
+                </ul>
+            </span>
+        </div>
+
+    </div>
+
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
