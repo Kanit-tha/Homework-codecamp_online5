@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation & infinite </title>
+    <style>
+        .testAi {
+            animation: nameAi1 10s 2s infinite alternate ease;
+
+            background-color: crimson;
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            position: relative;
+        }
+
+        .testAi2 {
+            animation: nameAi2 10s 2s infinite alternate ease-in;
+
+            background-color: aquamarine;
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            position: relative;
+        }
+
+        .testAi3 {
+            animation: nameAi3 10s 2s infinite alternate linear;
+
+
+            background-color: hotpink;
+            margin: 10px;
+            width: 50px;
+            height: 50px;
+            position: relative;
+        }
+
+        @keyframes nameAi1 {
+            0% {
+                left: 0px;
+            }
+
+            20% {
+                left: 100px;
+            }
+
+            40% {
+
+                left: 200px;
+                visibility: hidden;
+            }
+
+            60% {
+                left: 300px;
+                visibility: hidden;
+            }
+
+            80% {
+                left: 400px;
+            }
+
+            100% {
+                left: 500px;
+                background-color: coral;
+            }
+
+        }
+
+        @keyframes nameAi2 {
+            0% {
+                left: 0px;
+                
+            }
+
+            20% {
+                left: 100px;
+               background-color: green;
+            }
+
+            40% {
+                left: 200px;
+                background-color: cyan;
+            }
+
+            60% {
+                left: 300px;
+            }
+
+            80% {
+                left: 400px;
+                visibility: hidden;
+            }
+
+            100% {
+                left: 500px;
+                visibility: hidden;
+            }
+
+        }
+
+        @keyframes nameAi3 {
+            0% {
+                left: 0px;
+            }
+
+            20% {
+                left: 100px;
+
+            }
+
+            40% {
+                left: 200px;
+                background-color: pink;
+            }
+
+            60% {
+                left: 300px;
+            }
+
+            80% {
+                left: 400px;
+                background-color: pink;
+            }
+
+            100% {
+                left: 500px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="testAi">
+
+
+    </div>
+    <div class="testAi2">
+
+
+    </div>
+    <div class="testAi3">
+
+    </div>
+</body>
+
+</html>
