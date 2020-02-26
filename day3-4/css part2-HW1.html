@@ -80,6 +80,44 @@
             }
 
         }
+
+
+        .span {
+            animation-name: spanTest;
+            animation-duration: 7s;
+
+            position: fixed;
+            top: 10px;
+            left: 0px;
+            color: transparent;
+            font: 10pt serif;
+            
+
+            animation-delay: 5s;
+        }
+
+        @keyframes spanTest {
+            0% {
+                color: tomato;
+            }
+            25% {
+                color: teal;
+                font: 30pt serif;
+            }
+            50% {
+                color: yellow;
+                font: 30pt serif;
+                left: 100px;
+            }
+            75% {
+                color: firebrick;
+                left: 200px;
+                font: 30pt serif;
+            }
+            100% {
+                color: grey;
+            }
+        }
     </style>
 </head>
 
@@ -101,19 +139,9 @@
     </div>
 
     <span class="span">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Eius explicabo a quisquam adipisci voluptatibus consectetur
-        mollitia, illum expedita obcaecati aspernatur doloremque
-        dignissimos maiores nemo optio consequuntur quibusdam fugit.
-        Provident, similique!
+        Lorem ipsum dolor sit.
     </span>
-    <span id="span">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit.
-        Eius explicabo a quisquam adipisci voluptatibus consectetur
-        mollitia, illum expedita obcaecati aspernatur doloremque
-        dignissimos maiores nemo optio consequuntur quibusdam fugit.
-        Provident, similique!
-    </span>
+    
 
 </body>
 
