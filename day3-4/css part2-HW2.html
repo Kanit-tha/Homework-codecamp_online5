@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delay & Direction</title>
+    <style>
+        .testDD {
+            animation-name:delayDirection;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+
+            color: white;
+            background-color:black;
+            font-size: 30pt;
+            margin: 10px;
+        }
+
+        .testReverse {
+            animation-name:delayReverse;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction:reverse;
+
+            color: white;
+            background-color:black;
+            font-size: 30pt;
+            margin: 10px;
+        }
+        .testAlternate {
+            animation-name:delayAlternate;
+            animation-duration: 10s;
+            animation-delay: 2s;
+            animation-iteration-count: 2;
+            animation-direction: alternate;
+
+            color: white;
+            background-color:black;
+            font-size: 30pt;
+            margin: 10px;
+        }
+
+        @keyframes delayDirection {
+            0% {
+                background-color: teal;
+            }
+            20% {
+                color: teal;
+                background-color: yellowgreen;
+            }
+            40% {
+                color: yellowgreen;
+                background-color:brown;
+            }
+            60% {
+                color: brown;
+                background-color:lightpink;
+            }
+            80% {
+                color:lightpink;
+                background-color: steelblue;
+            }
+            100% {
+                color:steelblue;
+                background-color:lightgoldenrodyellow;
+            }
+
+        }
+
+        @keyframes delayReverse {
+            0% {
+                background-color: teal;
+            }
+            20% {
+                color: teal;
+                background-color: yellowgreen;
+            }
+            40% {
+                color: yellowgreen;
+                background-color:brown;
+            }
+            60% {
+                color: brown;
+                background-color:lightpink;
+            }
+            80% {
+                color:lightpink;
+                background-color: steelblue;
+            }
+            100% {
+                color:steelblue;
+                background-color:lightgoldenrodyellow;
+            }
+
+        }
+
+        @keyframes delayAlternate {
+            0% {
+                background-color: teal;
+            }
+            20% {
+                color: teal;
+                background-color: yellowgreen;
+            }
+            40% {
+                color: yellowgreen;
+                background-color:brown;
+            }
+            60% {
+                color: brown;
+                background-color:lightpink;
+            }
+            80% {
+                color:lightpink;
+                background-color: steelblue;
+            }
+            100% {
+                color:steelblue;
+                background-color:lightgoldenrodyellow;
+            }
+
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="testDD">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+        รอบที่1 0%-100% / รอบที่2 0%-100%
+        
+    </div>
+    <div class="testReverse">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+        รอบที่1 100%-0% / รอบที่2 100%-0%
+        
+    </div>
+    <div class="testAlternate">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. <br>
+        รอบที่1 0%-100% / รอบที่2 100%-0%
+        
+    </div>
+</body>
+
+</html>
