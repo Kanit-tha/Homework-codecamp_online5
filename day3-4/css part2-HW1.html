@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HW Animation</title>
+
+    <style>
+        .div {
+            animation-name: test;
+            animation-duration: 10s;
+
+            color: transparent;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: justify;
+            border: olive 10px solid;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            background-color: palegoldenrod;
+
+            animation-delay: 2s;
+
+        }
+
+        @keyframes test {
+            from {
+                color: transparent;
+                left: 0px;
+            }
+
+            to {
+                left: 600px;
+                color:black;
+                text-align: justify;
+                border: black 1px solid;
+                width: 400px;
+                height: 300px;
+                background-color:transparent;
+                padding: 10%;
+            }
+
+        }
+
+        #div {
+            animation-name: idTest;
+            animation-duration: 10s;
+
+            visibility: hidden;
+            color: transparent;
+            text-align: justify;
+            border:white 10px solid;
+            width: 500px;
+            height: 500px;
+            position: relative;
+            background-color:white;
+            
+
+            animation-delay: 2s;
+
+        }
+        @keyframes idTest {
+            from {
+                color: transparent;
+                top: 100px;
+            }
+
+            to {
+                visibility:visible;
+                top: -500px;
+                color:white;
+                text-align: justify;
+                border: black 1px solid;
+                width: 400px;
+                height: auto;
+                background-color:black;
+                padding: 10%;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Eius explicabo a quisquam adipisci voluptatibus consectetur
+        mollitia, illum expedita obcaecati aspernatur doloremque
+        dignissimos maiores nemo optio consequuntur quibusdam fugit.
+        Provident, similique!
+    </div>
+
+    <div id="div">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Eius explicabo a quisquam adipisci voluptatibus consectetur
+        mollitia, illum expedita obcaecati aspernatur doloremque
+        dignissimos maiores nemo optio consequuntur quibusdam fugit.
+        Provident, similique!
+    </div>
+
+
+</body>
+
+</html>
