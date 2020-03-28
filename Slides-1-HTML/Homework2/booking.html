@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Flight</title>
+    <style>
+        table{
+            border: solid black 1px;
+            padding: 20px;
+        }
+        tr, th {
+            width: auto;
+            text-align: left;
+            padding: 5px;
+        }
+        select, input {
+            color: gray;
+            border: lightgrey solid 2px;
+            
+        }
+        .user {
+            width: 70px;
+        }
+        .currency{
+            color: orangered;
+        }
+        .flying {
+            width: 140px;
+            height: 25px;
+            
+        }
+        .search {
+            color: white;
+            background-color: orangered;
+            border: orangered solid 1px;
+            margin-top: 20px;
+            padding: 10px 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <table>
+            <thead>
+                <tr>
+                    <th colspan="2">Flying from <br>
+                        <select class="flying" name="from" id="from">
+                            <option value="สนามบินA">สนามบินA</option>
+                            <option value="สนามบินB">สนามบินB</option>
+                            <option value="สนามบินC">สนามบินC</option>
+                        </select>
+                    </th>
+                    <th colspan="2">To <br>
+                        <select class="flying" name="to" id="to">
+                            <option value="สนามบินA">สนามบินA</option>
+                            <option value="สนามบินB">สนามบินB</option>
+                            <option value="สนามบินC">สนามบินC</option>
+                        </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th colspan="2">Departing <br>
+                        <input class="flying" type="date" name="departing">
+                    </th>
+                    <th colspan="2">Returning <br>
+                        <input class="flying" type="date" name="returning">
+                    </th>
+                </tr>
+                <tr>
+                    <th>Adult<br>
+                    <input class="user" type="number" min="0">
+                    </th>
+                    <th>Child<br>
+                    <input class="user" type="number" min="0">
+                    </th>
+                    <th>Infant<br>
+                    <input class="user" type="number" min="0" >
+                    </th>
+                    <th class="currency">Currency <br>
+                    <select class="user" name="currency" id="currency">
+                        <option value="ค่าเงินA">AAA</option>
+                        <option value="ค่าเงินB">BBB</option>
+                        <option value="ค่าเงินC">CCC</option>
+                    </select>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <input class="search" type="submit" value="SEARCH">
+                    </th>
+                </tr>
+            </thead>
+        </table>
+    </form>
+</body>
+
+</html>
